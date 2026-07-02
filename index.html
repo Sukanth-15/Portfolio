@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Sukanth G M | Computer Science Engineering Student</title>
+    <meta name="description" content="Portfolio of Sukanth G M — a Computer Science Engineering student passionate about software development, problem solving, and continuously learning new technologies.">
+    <meta name="keywords" content="Sukanth G M, portfolio, computer science student, software engineer intern, HTML CSS JavaScript, Java, Python, C++">
+    <meta name="author" content="Sukanth G M">
+
+
+    <meta property="og:title" content="Sukanth G M | CS Engineering Student">
+    <meta property="og:description" content="Aspiring Software Engineer — Computer Science student passionate about building clean, practical software.">
+    <meta property="og:type" content="website">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header id="site-header" role="banner">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="#hero" class="nav-logo" aria-label="Sukanth G M – back to top">Sukanth <em>G M</em></a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" role="list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode" title="Toggle theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Hamburger -->
+                <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </header>
+
+
+     <!-- HERO  -->
+    <main>
+        <section id="hero" class="section-hero" aria-label="Introduction">
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <!-- Status badge -->
+                    <div class="status-badge" aria-label="Currently open to internships">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Open to Internship Opportunities
+                    </div>
+
+                    <!-- Main heading — use h1 for SEO -->
+                    <h1 class="hero-heading">
+                        Hi, I'm <span class="accent">Sukanth G M</span>
+                    </h1>
+
+                    <!-- Role lines -->
+                    <p class="hero-role">Computer Science Engineering Student</p>
+                    <p class="hero-sub-role">Aspiring Software Engineer</p>
+
+                    <!-- Short intro -->
+                    <p class="hero-intro">
+                        I'm a CS student who enjoys writing clean code, solving algorithmic problems,
+                        and building projects that help me grow as a developer. Currently exploring
+                        software development with a focus on strong fundamentals.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-actions">
+                        <a href="resume.pdf" class="btn btn-primary" id="resume-btn" download aria-label="Download Resume">
+                            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                            Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="contact-hero-btn" aria-label="Go to contact section">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/Sukanth-15" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-github" aria-label="GitHub profile">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sukanth-g-m-9910b1378/" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-linkedin" aria-label="LinkedIn profile">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sukanthmohan05@gmail.com" class="social-link" id="hero-email" aria-label="Send email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll hint -->
+            <a href="#about" class="scroll-hint" aria-label="Scroll down to About section">
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </section>
+
+
+        <!--  ABOUT  -->
+        <section id="about" class="section section-about" aria-labelledby="about-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">About Me</p>
+                    <h2 id="about-heading" class="section-title">Who I Am</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <!-- Profile Card -->
+                    <div class="about-card fade-in" aria-label="Profile summary card">
+                        <div class="about-avatar" aria-hidden="true">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3 class="about-name">Sukanth G M</h3>
+                            <p class="about-title">CS Engineering Student</p>
+                            <div class="about-details">
+                                <span class="about-detail">
+                                    <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+                                    India
+                                </span>
+                                <span class="about-detail">
+                                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                    B.E. Computer Science
+                                </span>
+                                <span class="about-detail">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                    Open to Internships
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About text -->
+                    <div class="about-text-block fade-in">
+                        <p>
+                            I'm a Computer Science Engineering student with a genuine interest in software development
+                            and problem solving. I enjoy understanding how things work under the hood — from writing
+                            algorithms in C++ to building web interfaces with HTML, CSS, and JavaScript.
+                        </p>
+                        <p>
+                            My goal is to write code that is clean, readable, and purposeful. I believe good
+                            fundamentals matter more than chasing the latest trends. Whether it's implementing a
+                            data structure from scratch or debugging a layout issue in CSS, I approach every
+                            challenge with patience and curiosity.
+                        </p>
+                        <p>
+                            I'm actively working on personal projects to strengthen my portfolio and deepen my
+                            understanding of core computer science concepts. I'm looking for an internship where
+                            I can contribute, learn from experienced engineers, and grow as a developer.
+                        </p>
+                        <div class="about-tags">
+                            <span class="tag">Problem Solver</span>
+                            <span class="tag">Clean Code</span>
+                            <span class="tag">Continuous Learner</span>
+                            <span class="tag">Team Player</span>
+                            <span class="tag">Detail-oriented</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  SKILLS  -->
+        <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">What I Know</p>
+                    <h2 id="skills-heading" class="section-title">Skills</h2>
+                    <p class="section-desc">A snapshot of the languages, tools, and concepts I have studied and used.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- Category: Programming Languages -->
+                    <div class="skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-chip">
+                                <i class="fa-solid fa-c" aria-hidden="true"></i> C
+                            </span>
+                            <span class="skill-chip">
+                                <span aria-hidden="true">C++</span> C++
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-java" aria-hidden="true"></i> Java
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-python" aria-hidden="true"></i> Python
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Web Development -->
+                    <div class="skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Core CS -->
+                    <div class="skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                            <h3>Core Computer Science</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-chip">Data Structures &amp; Algorithms</span>
+                            <span class="skill-chip">Object-Oriented Programming</span>
+                            <span class="skill-chip">Operating Systems</span>
+                            <span class="skill-chip">DBMS</span>
+                            <span class="skill-chip">Computer Networks</span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Tools -->
+                    <div class="skill-category fade-in">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-wrench" aria-hidden="true"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                            </span>
+                            <span class="skill-chip">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i> VS Code
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Category: Learning -->
+                    <div class="skill-category fade-in skill-category--learning">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-chip skill-chip--learning">
+                                <i class="fa-solid fa-robot" aria-hidden="true"></i> AI Fundamentals
+                                
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  PROJECTS  -->
+        <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">What I've Built</p>
+                    <h2 id="projects-heading" class="section-title">Projects</h2>
+                    <p class="section-desc">Personal projects built to practise and demonstrate my skills.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: Restaurant Website (Completed) -->
+                    <article class="project-card fade-in" id="project-restaurant" aria-label="Restaurant Website project">
+                        <div class="project-header">
+                            <div class="project-icon" aria-hidden="true">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sukanth-15.github.io/Restaurant/" class="project-link-btn" id="restaurant-demo-btn" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Restaurant Website">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/Sukanth-15" class="project-link-btn project-link-btn--ghost" id="restaurant-github-btn" target="_blank" rel="noopener noreferrer" aria-label="View Restaurant Website source code on GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">Restaurant Website</h3>
+                            <p class="project-desc">
+                                Developed a responsive restaurant website using HTML, CSS, and JavaScript with a
+                                modern and user-friendly interface. Focused on clean layout, organised content
+                                sections, and a smooth browsing experience across devices.
+                            </p>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-features">
+                                <span class="feature-item">
+                                    <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                                    Responsive Design
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                                    Interactive Navigation
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                                    Mobile-friendly Layout
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+                                    Organised Content Sections
+                                </span>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Coming Soon Placeholder -->
+                    <article class="project-card project-card--placeholder fade-in" id="project-placeholder-1" aria-label="Future project placeholder">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon" aria-hidden="true">
+                                <i class="fa-solid fa-folder-plus"></i>
+                            </div>
+                            <h3 class="project-title">Next Project</h3>
+                            <p class="project-desc">Currently working on something new. Check back soon!</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Coming Soon Placeholder -->
+                    <article class="project-card project-card--placeholder fade-in" id="project-placeholder-2" aria-label="Future project placeholder">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon" aria-hidden="true">
+                                <i class="fa-solid fa-folder-plus"></i>
+                            </div>
+                            <h3 class="project-title">Next Project</h3>
+                            <p class="project-desc">More projects in progress. Stay tuned!</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  CERTIFICATIONS  -->
+        <section id="certifications" class="section section-certifications" aria-labelledby="cert-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">Credentials</p>
+                    <h2 id="cert-heading" class="section-title">Certifications</h2>
+                    <p class="section-desc">Courses and certifications I have completed.</p>
+                </div>
+
+                <div class="certs-grid">
+
+
+                    <article class="cert-card cert-card--placeholder fade-in" id="cert-placeholder-1" aria-label="Certification placeholder">
+                        <div class="cert-icon" aria-hidden="true">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Java Programming for Beginners</h3>
+                            <p class="cert-issuer">IBM • Coursera</p>
+                            <p class="cert-date">2026</p>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/N810QIKJCWTH" class="cert-verify-btn" target="_blank" rel="noopener noreferrer" aria-label="Verify certification">
+                                Verify <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+
+                    </article>
+
+                    <article class="cert-card cert-card--placeholder fade-in" id="cert-placeholder-2" aria-label="Certification placeholder">
+                        <div class="cert-icon" aria-hidden="true">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Introduction to Software Development</h3>
+                            <p class="cert-issuer">Amazon • Coursera</p>
+                            <p class="cert-date">2026</p>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/CWKG61RZIRPN" class="cert-verify-btn" target="_blank" rel="noopener noreferrer" aria-label="Verify certification">
+                                Verify <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        
+                    </article>
+
+                    <article class="cert-card fade-in" id="cert-YOUR-ID">
+                            <div class="cert-icon" aria-hidden="true">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-name">Programming with Java</h3>
+                                <p class="cert-issuer">Amazon • Coursera</p>
+                                <p class="cert-date">2026</p>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/ME0PAIU1HNUM" class="cert-verify-btn" target="_blank" rel="noopener noreferrer" aria-label="Verify certification">
+                                Verify <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  EDUCATION  -->
+        <section id="education" class="section section-education" aria-labelledby="edu-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">Academic Background</p>
+                    <h2 id="edu-heading" class="section-title">Education</h2>
+                </div>
+
+                <div class="education-timeline">
+
+                    <article class="edu-card fade-in" id="edu-college" aria-label="College education">
+                        <div class="edu-icon" aria-hidden="true">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-body">
+                            <div class="edu-top">
+                                <div>
+                                    <h3 class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</h3>
+                                    <p class="edu-college">Sri Krishna College Of Engineering and Technology</p>
+                                </div>
+                                <div class="edu-meta">
+                                    <span class="edu-year">
+                                        <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+                                        2025 – 2029
+                                    </span>
+                                    <span class="edu-cgpa">
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        CGPA: 8.98 / 10.0
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="edu-desc">
+                                Pursuing a Bachelor of Engineering in Computer Science &amp; Engineering with focus on
+                                core subjects including Data Structures, Algorithms, Operating Systems, Database Management
+                                Systems, Object-Oriented Programming, and Computer Networks.
+                            </p>
+                            <div class="edu-subjects">
+                                <span class="edu-subject">Data Structures</span>
+                                <span class="edu-subject">Algorithms</span>
+                                <span class="edu-subject">Operating Systems</span>
+                                <span class="edu-subject">DBMS</span>
+                                <span class="edu-subject">OOP</span>
+                                <span class="edu-subject">Computer Networks</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  CONTACT  -->
+        <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+            <div class="container">
+
+                <div class="section-header">
+                    <p class="section-label">Get In Touch</p>
+                    <h2 id="contact-heading" class="section-title">Contact</h2>
+                    <p class="section-desc">
+                        Feel free to reach out — whether it's about an internship opportunity, a project idea, or just to say hello.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Links -->
+                    <div class="contact-links-block fade-in">
+                        <h3 class="contact-sub-heading">Reach me at</h3>
+
+                        <ul class="contact-list" role="list">
+                            <li>
+                                <a href="mailto:sukanthmohan05@gmail.com" class="contact-item" id="contact-email" aria-label="Send email to Sukanth">
+                                    <div class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="contact-label">Email</span>
+                                        <span class="contact-value">sukanthmohan05@gmail.com</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right contact-arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/sukanth-g-m-9910b1378/" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin" aria-label="Visit LinkedIn profile">
+                                    <div class="contact-icon" aria-hidden="true">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="contact-label">LinkedIn</span>
+                                        <span class="contact-value">linkedin.com/in/sukanth-g-m</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right contact-arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Sukanth-15" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github" aria-label="Visit GitHub profile">
+                                    <div class="contact-icon" aria-hidden="true">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="contact-label">GitHub</span>
+                                        <span class="contact-value">github.com/Sukanth-15</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right contact-arrow" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="contact-item contact-item--no-link" aria-label="Location">
+                                    <div class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="contact-label">Location</span>
+                                        <span class="contact-value">India</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick message card -->
+                    <div class="contact-card fade-in" aria-label="Contact card message">
+                        <div class="contact-card-inner">
+                            <div class="contact-card-icon" aria-hidden="true">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <h3>Let's Connect</h3>
+                            <p>
+                                I'm actively looking for internship opportunities where I can contribute,
+                                learn, and grow alongside a great team.
+                            </p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sukanthmohan05@gmail.com" class="btn btn-primary" id="send-email-btn" aria-label="Send email to Sukanth">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                Send an Email
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--  FOOTER  -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <p class="footer-copy">
+                &copy; 2026 <strong>Sukanth G M</strong>. Built with HTML, CSS &amp; JavaScript.
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/Sukanth-15" target="_blank" rel="noopener noreferrer" class="social-link" id="footer-github" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sukanth-g-m-9910b1378/" target="_blank" rel="noopener noreferrer" class="social-link" id="footer-linkedin" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:sukanthmohan05@gmail.com" class="social-link" id="footer-email" aria-label="Email">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
